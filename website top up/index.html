@@ -648,6 +648,57 @@
             margin-left: auto;
             margin-right: auto;
         }
+        
+        /* CSS Tambahan untuk Fitur Baru */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .stock-badge {
+            animation: pulse 1.5s infinite !important;
+        }
+        
+        .package-card:hover {
+            animation: float 2s ease-in-out infinite;
+        }
+        
+        /* Responsif untuk notifikasi */
+        @media (max-width: 768px) {
+            #live-order-notification {
+                width: 250px;
+                right: 10px;
+                bottom: 10px;
+            }
+            
+            #share-reward {
+                left: 10px;
+                bottom: 70px;
+                width: 220px;
+            }
+            
+            #quick-order-shortcut {
+                width: 50px;
+                height: 50px;
+                font-size: 1.2rem;
+            }
+            
+            #discount-popup {
+                width: 95% !important;
+                padding: 20px !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -686,7 +737,7 @@
             <div class="games-grid">
                 <!-- Mobile Legends -->
                 <div class="game-card">
-                    <div class="game-image" style="background-image: url('mlbb.jpg');"></div>
+                    <div class="game-image" style="background-image: url('https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
                     <div class="game-info">
                         <h3 class="game-title">Mobile Legends</h3>
                         <p class="game-desc">Top up Diamond Mobile Legends dengan harga terjangkau.</p>
@@ -696,7 +747,7 @@
                 
                 <!-- Free Fire -->
                 <div class="game-card">
-                    <div class="game-image" style="background-image: url('free\ fire.jpg')></div>
+                    <div class="game-image" style="background-image: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
                     <div class="game-info">
                         <h3 class="game-title">Free Fire</h3>
                         <p class="game-desc">Dapatkan Diamond FF dengan proses cepat dan aman.</p>
@@ -706,7 +757,7 @@
                 
                 <!-- Free Fire Max -->
                 <div class="game-card">
-                    <div class="game-image" style="background-image: url('freefiremax.jpeg');"></div>
+                    <div class="game-image" style="background-image: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
                     <div class="game-info">
                         <h3 class="game-title">Free Fire Max</h3>
                         <p class="game-desc">Top up Diamond Free Fire Max dengan harga terbaik.</p>
@@ -716,7 +767,7 @@
                 
                 <!-- MAGIC CHEES GoGo -->
                 <div class="game-card">
-                    <div class="game-image" style="background-image: url('MC\ GOGO.jpeg');"></div>
+                    <div class="game-image" style="background-image: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
                     <div class="game-info">
                         <h3 class="game-title">MAGIC CHEES GoGo</h3>
                         <p class="game-desc">Top up koin MAGIC CHEES GoGo dengan proses instan.</p>
@@ -726,7 +777,7 @@
                 
                 <!-- Genshin Impact -->
                 <div class="game-card">
-                    <div class="game-image" style="background-image: url('genshinimpact.jpg');"></div>
+                    <div class="game-image" style="background-image: url('https://images.unsplash.com/photo-1635863138275-d9b33299680a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
                     <div class="game-info">
                         <h3 class="game-title">Genshin Impact</h3>
                         <p class="game-desc">Top up Genesis Crystal dan Welkin Moon.</p>
@@ -736,7 +787,7 @@
                 
                 <!-- Call of Duty Mobile -->
                 <div class="game-card">
-                    <div class="game-image" style="background-image: url('codm.jpeg');"></div>
+                    <div class="game-image" style="background-image: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
                     <div class="game-info">
                         <h3 class="game-title">Call of Duty Mobile</h3>
                         <p class="game-desc">Top up CP COD Mobile dengan harga terbaik.</p>
@@ -746,7 +797,7 @@
                 
                 <!-- Valorant -->
                 <div class="game-card">
-                    <div class="game-image" style="background-image: url('valorant.jpg');"></div>
+                    <div class="game-image" style="background-image: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
                     <div class="game-info">
                         <h3 class="game-title">Valorant</h3>
                         <p class="game-desc">Top up Valorant Points dengan proses cepat.</p>
@@ -756,7 +807,7 @@
                 
                 <!-- Honor of Kings -->
                 <div class="game-card">
-                    <div class="game-image" style="background-image: url('hok.jpeg');"></div>
+                    <div class="game-image" style="background-image: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
                     <div class="game-info">
                         <h3 class="game-title">Honor of Kings</h3>
                         <p class="game-desc">Top up diamond Honor of Kings dengan harga murah.</p>
@@ -766,7 +817,7 @@
                 
                 <!-- Honkai: Star Rail -->
                 <div class="game-card">
-                    <div class="game-image" style="background-image: url('hsr.jpeg');"></div>
+                    <div class="game-image" style="background-image: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
                     <div class="game-info">
                         <h3 class="game-title">Honkai: Star Rail</h3>
                         <p class="game-desc">Top up Oneiric Shard dan Supply Pass.</p>
@@ -776,7 +827,7 @@
                 
                 <!-- Delta Force -->
                 <div class="game-card">
-                    <div class="game-image" style="background-image: url('deltaforce.jpeg');"></div>
+                    <div class="game-image" style="background-image: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
                     <div class="game-info">
                         <h3 class="game-title">Delta Force</h3>
                         <p class="game-desc">Top up koin dan item Delta Force.</p>
@@ -786,7 +837,7 @@
                 
                 <!-- PUBG Mobile -->
                 <div class="game-card">
-                    <div class="game-image" style="background-image: url('PUBG\ mobile.jpeg');"></div>
+                    <div class="game-image" style="background-image: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
                     <div class="game-info">
                         <h3 class="game-title">PUBG Mobile</h3>
                         <p class="game-desc">Top up UC PUBG Mobile dengan harga terbaik.</p>
@@ -927,34 +978,37 @@
                                 </div>
                                 
                                 <div class="package-card">
-                                    <div class="discount-badge">-6%</div>
                                     <div class="package-name">Paket Reguler</div>
                                     <div class="diamond-amount">40 +4 Diamond</div>
                                     <div class="price">
-                                        <span class="original-price">Rp 12.000</span>
-                                        <span class="discounted-price">Rp 11.280</span>
+                                        <span class="discounted-price">Rp 12.580</span>
+                                    </div>
+                                    <button type="button" class="btn select-package" data-amount="40" data-bonus="4" data-price="11280">Pilih</button>
+                                </div> 
+
+                                <div class="package-card">
+                                    <div class="package-name">Paket Reguler</div>
+                                    <div class="diamond-amount">53 + 6 Diamond</div>
+                                    <div class="price">
+                                        <span class="discounted-price">Rp 17.280</span>
                                     </div>
                                     <button type="button" class="btn select-package" data-amount="40" data-bonus="4" data-price="11280">Pilih</button>
                                 </div>
                                 
                                 <div class="package-card">
-                                    <div class="discount-badge">-6%</div>
                                     <div class="package-name">Paket Reguler</div>
-                                    <div class="diamond-amount">53 +6 Diamond</div>
+                                    <div class="diamond-amount">73 +7 Diamond</div>
                                     <div class="price">
-                                        <span class="original-price">Rp 16.000</span>
-                                        <span class="discounted-price">Rp 15.040</span>
+                                        <span class="discounted-price">Rp 25.040</span>
                                     </div>
                                     <button type="button" class="btn select-package" data-amount="53" data-bonus="6" data-price="15040">Pilih</button>
                                 </div>
                                 
                                 <div class="package-card">
-                                    <div class="discount-badge">-6%</div>
                                     <div class="package-name">Paket Reguler</div>
-                                    <div class="diamond-amount">77 +8 Diamond</div>
+                                    <div class="diamond-amount">80 +8 Diamond</div>
                                     <div class="price">
-                                        <span class="original-price">Rp 23.000</span>
-                                        <span class="discounted-price">Rp 21.620</span>
+                                        <span class="discounted-price">Rp 25.620</span>
                                     </div>
                                     <button type="button" class="btn select-package" data-amount="77" data-bonus="8" data-price="21620">Pilih</button>
                                 </div>
@@ -1237,8 +1291,6 @@
                                 <input type="text" id="ff-userID" class="form-control" placeholder="Masukkan ID Game" required>
                             </div>
                             <div class="form-group">
-                                <label for="ff-serverID">Server ID</label>
-                                <input type="text" id="ff-serverID" class="form-control" placeholder="Masukkan Server ID" required>
                             </div>
                         </div>
                         
@@ -1485,15 +1537,14 @@
                                 </div>
                                 <button type="button" class="btn select-package" data-amount="1000" data-bonus="0" data-price="135000">Pilih</button>
                             </div>
-                        </div>
-
-                         <div class="package-card">
+                            
+                            <div class="package-card">
                                 <div class="package-name">Paket Diamond</div>
                                 <div class="diamond-amount">1050 Diamonds</div>
                                 <div class="price">
                                     <span class="discounted-price">Rp 130.000</span>
                                 </div>
-                                <button type="button" class="btn select-package" data-amount="1050" data-bonus="0" data-price="18500">Pilih</button>
+                                <button type="button" class="btn select-package" data-amount="1050" data-bonus="0" data-price="130000">Pilih</button>
                             </div>
                             
                             <div class="package-card">
@@ -1502,7 +1553,7 @@
                                 <div class="price">
                                     <span class="discounted-price">Rp 137.000</span>
                                 </div>
-                                <button type="button" class="btn select-package" data-amount="1080" data-bonus="0" data-price="28000">Pilih</button>
+                                <button type="button" class="btn select-package" data-amount="1080" data-bonus="0" data-price="137000">Pilih</button>
                             </div>
                             
                             <div class="package-card">
@@ -1511,7 +1562,7 @@
                                 <div class="price">
                                     <span class="discounted-price">Rp 153.000</span>
                                 </div>
-                                <button type="button" class="btn select-package" data-amount="1200" data-bonus="0" data-price="37000">Pilih</button>
+                                <button type="button" class="btn select-package" data-amount="1200" data-bonus="0" data-price="153000">Pilih</button>
                             </div>
                             
                             <div class="package-card">
@@ -1520,7 +1571,7 @@
                                 <div class="price">
                                     <span class="discounted-price">Rp 167.500</span>
                                 </div>
-                                <button type="button" class="btn select-package" data-amount="1300" data-bonus="0" data-price="46500">Pilih</button>
+                                <button type="button" class="btn select-package" data-amount="1300" data-bonus="0" data-price="167500">Pilih</button>
                             </div>
                             
                             <div class="package-card">
@@ -1529,7 +1580,7 @@
                                 <div class="price">
                                     <span class="discounted-price">Rp 192.000</span>
                                 </div>
-                                <button type="button" class="btn select-package" data-amount="1510" data-bonus="0" data-price="65000">Pilih</button>
+                                <button type="button" class="btn select-package" data-amount="1510" data-bonus="0" data-price="192000">Pilih</button>
                             </div>
                             
                             <div class="package-card">
@@ -1538,7 +1589,7 @@
                                 <div class="price">
                                     <span class="discounted-price">Rp 227.500</span>
                                 </div>
-                                <button type="button" class="btn select-package" data-amount="1800" data-bonus="0" data-price="92500">Pilih</button>
+                                <button type="button" class="btn select-package" data-amount="1800" data-bonus="0" data-price="227500">Pilih</button>
                             </div>
                             
                             <div class="package-card">
@@ -1547,7 +1598,7 @@
                                 <div class="price">
                                     <span class="discounted-price">Rp 252.000</span>
                                 </div>
-                                <button type="button" class="btn select-package" data-amount="2000" data-bonus="0" data-price="135000">Pilih</button>
+                                <button type="button" class="btn select-package" data-amount="2000" data-bonus="0" data-price="252000">Pilih</button>
                             </div>
                         </div>
                         
@@ -1840,81 +1891,115 @@
                                 </div>
                                 <button type="button" class="btn select-package" data-amount="280" data-bonus="0" data-price="37000">Pilih</button>
                             </div>
-
-                            <div class="packages-grid">
+                            
                             <div class="package-card">
                                 <div class="package-name">Paket Diamond</div>
-                                <div class="diamond-amount">5 Diamonds</div>
+                                <div class="diamond-amount">355 Diamonds</div>
                                 <div class="price">
-                                    <span class="discounted-price">Rp 1.000</span>
+                                    <span class="discounted-price">Rp 46.500</span>
                                 </div>
-                                <button type="button" class="btn select-package" data-amount="5" data-bonus="0" data-price="1000">Pilih</button>
+                                <button type="button" class="btn select-package" data-amount="355" data-bonus="0" data-price="46500">Pilih</button>
                             </div>
                             
                             <div class="package-card">
                                 <div class="package-name">Paket Diamond</div>
-                                <div class="diamond-amount">12 Diamonds</div>
+                                <div class="diamond-amount">500 Diamonds</div>
                                 <div class="price">
-                                    <span class="discounted-price">Rp 2.000</span>
+                                    <span class="discounted-price">Rp 65.000</span>
                                 </div>
-                                <button type="button" class="btn select-package" data-amount="12" data-bonus="0" data-price="2000">Pilih</button>
+                                <button type="button" class="btn select-package" data-amount="500" data-bonus="0" data-price="65000">Pilih</button>
                             </div>
                             
                             <div class="package-card">
                                 <div class="package-name">Paket Diamond</div>
-                                <div class="diamond-amount">50 Diamonds</div>
+                                <div class="diamond-amount">545 Diamonds</div>
                                 <div class="price">
-                                    <span class="discounted-price">Rp 7.000</span>
+                                    <span class="discounted-price">Rp 72.000</span>
                                 </div>
-                                <button type="button" class="btn select-package" data-amount="50" data-bonus="0" data-price="7000">Pilih</button>
+                                <button type="button" class="btn select-package" data-amount="545" data-bonus="0" data-price="72000">Pilih</button>
                             </div>
                             
                             <div class="package-card">
                                 <div class="package-name">Paket Diamond</div>
-                                <div class="diamond-amount">70 Diamonds</div>
+                                <div class="diamond-amount">635 Diamonds</div>
                                 <div class="price">
-                                    <span class="discounted-price">Rp 9.500</span>
+                                    <span class="discounted-price">Rp 82.000</span>
                                 </div>
-                                <button type="button" class="btn select-package" data-amount="70" data-bonus="0" data-price="9500">Pilih</button>
+                                <button type="button" class="btn select-package" data-amount="635" data-bonus="0" data-price="82000">Pilih</button>
                             </div>
                             
                             <div class="package-card">
                                 <div class="package-name">Paket Diamond</div>
-                                <div class="diamond-amount">100 Diamonds</div>
+                                <div class="diamond-amount">720 Diamonds</div>
                                 <div class="price">
-                                    <span class="discounted-price">Rp 14.000</span>
+                                    <span class="discounted-price">Rp 92.000</span>
                                 </div>
-                                <button type="button" class="btn select-package" data-amount="100" data-bonus="0" data-price="14000">Pilih</button>
+                                <button type="button" class="btn select-package" data-amount="720" data-bonus="0" data-price="92000">Pilih</button>
                             </div>
                             
                             <div class="package-card">
                                 <div class="package-name">Paket Diamond</div>
-                                <div class="diamond-amount">140 Diamonds</div>
+                                <div class="diamond-amount">800 Diamonds</div>
                                 <div class="price">
-                                    <span class="discounted-price">Rp 18.500</span>
+                                    <span class="discounted-price">Rp 102.500</span>
                                 </div>
-                                <button type="button" class="btn select-package" data-amount="140" data-bonus="0" data-price="18500">Pilih</button>
+                                <button type="button" class="btn select-package" data-amount="800" data-bonus="0" data-price="102500">Pilih</button>
                             </div>
                             
                             <div class="package-card">
                                 <div class="package-name">Paket Diamond</div>
-                                <div class="diamond-amount">210 Diamonds</div>
+                                <div class="diamond-amount">930 Diamonds</div>
                                 <div class="price">
-                                    <span class="discounted-price">Rp 28.000</span>
+                                    <span class="discounted-price">Rp 120.000</span>
                                 </div>
-                                <button type="button" class="btn select-package" data-amount="210" data-bonus="0" data-price="28000">Pilih</button>
+                                <button type="button" class="btn select-package" data-amount="930" data-bonus="0" data-price="120000">Pilih</button>
                             </div>
                             
                             <div class="package-card">
                                 <div class="package-name">Paket Diamond</div>
-                                <div class="diamond-amount">280 Diamonds</div>
+                                <div class="diamond-amount">1000 Diamonds</div>
                                 <div class="price">
-                                    <span class="discounted-price">Rp 37.000</span>
+                                    <span class="discounted-price">Rp 130.500</span>
                                 </div>
-                                <button type="button" class="btn select-package" data-amount="280" data-bonus="0" data-price="37000">Pilih</button>
+                                <button type="button" class="btn select-package" data-amount="1000" data-bonus="0" data-price="130500">Pilih</button>
+                            </div>
+                            
+                            <div class="package-card">
+                                <div class="package-name">Paket Diamond</div>
+                                <div class="diamond-amount">1100 Diamonds</div>
+                                <div class="price">
+                                    <span class="discounted-price">Rp 145.000</span>
+                                </div>
+                                <button type="button" class="btn select-package" data-amount="1125" data-bonus="0" data-price="145000">Pilih</button>
+                            </div>
+                            
+                            <div class="package-card">
+                                <div class="package-name">Paket Diamond</div>
+                                <div class="diamond-amount">1510 Diamonds</div>
+                                <div class="price">
+                                    <span class="discounted-price">Rp 190.000</span>
+                                </div>
+                                <button type="button" class="btn select-package" data-amount="1510" data-bonus="0" data-price="190000">Pilih</button>
+                            </div>
+                            
+                            <div class="package-card">
+                                <div class="package-name">Paket Diamond</div>
+                                <div class="diamond-amount">2000 Diamonds</div>
+                                <div class="price">
+                                    <span class="discounted-price">Rp 252.500</span>
+                                </div>
+                                <button type="button" class="btn select-package" data-amount="2000" data-bonus="0" data-price="252500">Pilih</button>
+                            </div>
+                            
+                            <div class="package-card">
+                                <div class="package-name">Paket Diamond</div>
+                                <div class="diamond-amount">2620 Diamonds</div>
+                                <div class="price">
+                                    <span class="discounted-price">Rp 340.000</span>
+                                </div>
+                                <button type="button" class="btn select-package" data-amount="2720" data-bonus="0" data-price="340000">Pilih</button>
                             </div>
                         </div>
-                        
                         
                         <button type="submit" class="btn" style="width: 100%; margin-top: 20px;">Lanjutkan ke WhatsApp</button>
                     </form>
@@ -1922,18 +2007,18 @@
             </div>
             
             <!-- MAGIC CHEES GoGo Top Up -->
-            <div class="game-section" id="MAGIC CHEES gogo-topup">
+            <div class="game-section" id="mcgogo-topup">
                 <div class="topup-form">
                     <h3 style="margin-bottom: 20px;">Top Up MAGIC CHEES GoGo</h3>
                     <form id="mcgogoForm">
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="MAGIC CHEES GoGo-userID">ID Game</label>
-                                <input type="text" id="MAGIC CHEES GoGo" class="form-control" placeholder="Masukkan ID Game" required>
+                                <label for="mcgogo-userID">ID Game</label>
+                                <input type="text" id="mcgogo-userID" class="form-control" placeholder="Masukkan ID Game" required>
                             </div>
                             <div class="form-group">
-                                <label for="MAGIC CHEES GoGo-serverID">Server ID</label>
-                                <input type="text" id="MAGIC CHEES Go-serverID" class="form-control" placeholder="Masukkan Server ID" required>
+                                <label for="mcgogo-serverID">Server ID</label>
+                                <input type="text" id="mcgogo-serverID" class="form-control" placeholder="Masukkan Server ID" required>
                             </div>
                         </div>
                         
@@ -2533,6 +2618,8 @@
     </footer>
 
     <script>
+        // ================= KODE ASLI =================
+        
         // Tab Navigation
         document.querySelectorAll('.tab').forEach(tab => {
             tab.addEventListener('click', function() {
@@ -2831,7 +2918,7 @@
             // Format pesan untuk WhatsApp
             const formattedPrice = new Intl.NumberFormat('id-ID').format(selectedPackage.price);
             
-            let message = `Halo, saya ingin top up GoGo:%0A%0AID: ${userID}%0AServer: ${serverID}%0A`;
+            let message = `Halo, saya ingin top up MAGIC CHEES GoGo:%0A%0AID: ${userID}%0AServer: ${serverID}%0A`;
             
             if (selectedPackage.amount === 'Weekly Card') {
                 message += `Paket: Weekly Card%0A`;
@@ -2996,6 +3083,598 @@
             
             // Redirect ke WhatsApp
             window.open(`https://wa.me/6281265537794?text=${message}`, '_blank');
+        });
+        
+        // ================= FITUR BARU =================
+        
+        // 1. FITUR COUNTDOWN FLASH SALE
+        function createFlashSaleCountdown() {
+            const flashSales = document.querySelectorAll('.flash-sale');
+            
+            flashSales.forEach(flashSale => {
+                let countdownContainer = flashSale.querySelector('.countdown-container');
+                if (!countdownContainer) {
+                    countdownContainer = document.createElement('div');
+                    countdownContainer.className = 'countdown-container';
+                    countdownContainer.style.cssText = `
+                        text-align: center;
+                        margin: 20px 0;
+                        padding: 15px;
+                        background: linear-gradient(45deg, #e63946, #ff4d5a);
+                        border-radius: 10px;
+                        color: white;
+                        font-weight: bold;
+                    `;
+                    
+                    const countdownTitle = document.createElement('div');
+                    countdownTitle.textContent = '⏰ FLASH SALE BERAKHIR DALAM:';
+                    countdownTitle.style.cssText = 'margin-bottom: 10px; font-size: 1.1rem;';
+                    
+                    const countdownTimer = document.createElement('div');
+                    countdownTimer.id = 'flash-sale-timer-' + Math.random().toString(36).substr(2, 9);
+                    countdownTimer.style.cssText = 'font-size: 1.5rem; letter-spacing: 2px;';
+                    
+                    countdownContainer.appendChild(countdownTitle);
+                    countdownContainer.appendChild(countdownTimer);
+                    flashSale.insertBefore(countdownContainer, flashSale.firstChild);
+                }
+            });
+            
+            // Set waktu countdown (2 jam dari sekarang)
+            let countdownTime = 2 * 60 * 60; // 2 jam dalam detik
+            
+            function updateCountdown() {
+                const hours = Math.floor(countdownTime / 3600);
+                const minutes = Math.floor((countdownTime % 3600) / 60);
+                const seconds = countdownTime % 60;
+                
+                document.querySelectorAll('[id^="flash-sale-timer-"]').forEach(timer => {
+                    timer.innerHTML = `
+                        <span style="background: #121212; padding: 5px 10px; border-radius: 5px; margin: 0 5px;">
+                            ${hours.toString().padStart(2, '0')}
+                        </span> :
+                        <span style="background: #121212; padding: 5px 10px; border-radius: 5px; margin: 0 5px;">
+                            ${minutes.toString().padStart(2, '0')}
+                        </span> :
+                        <span style="background: #121212; padding: 5px 10px; border-radius: 5px; margin: 0 5px;">
+                            ${seconds.toString().padStart(2, '0')}
+                        </span>
+                    `;
+                });
+                
+                if (countdownTime > 0) {
+                    countdownTime--;
+                    setTimeout(updateCountdown, 1000);
+                } else {
+                    document.querySelectorAll('[id^="flash-sale-timer-"]').forEach(timer => {
+                        timer.textContent = 'FLASH SALE TELAH BERAKHIR!';
+                        timer.style.color = '#ff9999';
+                    });
+                }
+            }
+            
+            updateCountdown();
+        }
+        
+        // 2. FITUR NOTIFIKASI STOK TERBATAS
+        function createLimitedStockNotification() {
+            const packages = document.querySelectorAll('.package-card');
+            
+            packages.forEach((package, index) => {
+                if (index % 4 === 0 || index % 7 === 0) {
+                    const stockBadge = document.createElement('div');
+                    stockBadge.className = 'stock-badge';
+                    stockBadge.style.cssText = `
+                        position: absolute;
+                        top: 40px;
+                        right: 10px;
+                        background: linear-gradient(45deg, #ff9900, #ffcc00);
+                        color: #121212;
+                        padding: 3px 8px;
+                        border-radius: 12px;
+                        font-size: 0.7rem;
+                        font-weight: bold;
+                        animation: pulse 1.5s infinite;
+                    `;
+                    
+                    const randomStock = Math.floor(Math.random() * 5) + 1;
+                    stockBadge.textContent = `🔥 Tersisa ${randomStock}`;
+                    
+                    package.style.position = 'relative';
+                    package.appendChild(stockBadge);
+                }
+            });
+        }
+        
+        // 3. FITUR PESANAN TERKINI (Live Order Notification)
+        function createLiveOrderNotification() {
+            const notificationContainer = document.createElement('div');
+            notificationContainer.id = 'live-order-notification';
+            notificationContainer.style.cssText = `
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                width: 300px;
+                background: var(--card-bg);
+                border: 1px solid var(--accent-red);
+                border-radius: 10px;
+                padding: 15px;
+                z-index: 1000;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+                display: none;
+                font-size: 0.9rem;
+            `;
+            
+            const notificationContent = document.createElement('div');
+            notificationContent.id = 'notification-content';
+            notificationContent.style.cssText = 'color: var(--text-light);';
+            
+            const closeBtn = document.createElement('span');
+            closeBtn.textContent = '×';
+            closeBtn.style.cssText = `
+                position: absolute;
+                top: 5px;
+                right: 10px;
+                cursor: pointer;
+                font-size: 1.5rem;
+                color: var(--text-gray);
+            `;
+            closeBtn.onclick = () => {
+                notificationContainer.style.display = 'none';
+            };
+            
+            notificationContainer.appendChild(closeBtn);
+            notificationContainer.appendChild(notificationContent);
+            document.body.appendChild(notificationContainer);
+            
+            const fakeOrders = [
+                { name: 'Rizki', game: 'Mobile Legends', amount: '200 Diamond', time: '1 menit yang lalu' },
+                { name: 'Sari', game: 'Free Fire', amount: '500 Diamond', time: '2 menit yang lalu' },
+                { name: 'Ahmad', game: 'PUBG Mobile', amount: '1200 UC', time: '3 menit yang lalu' },
+                { name: 'Budi', game: 'Genshin Impact', amount: '330 Genesis Crystals', time: '4 menit yang lalu' },
+                { name: 'Dewi', game: 'Mobile Legends', amount: 'Joki Epic ke Mythic', time: '5 menit yang lalu' },
+                { name: 'Fajar', game: 'Call of Duty', amount: '645 CP', time: '6 menit yang lalu' }
+            ];
+            
+            let orderIndex = 0;
+            
+            function showNextOrder() {
+                if (orderIndex >= fakeOrders.length) orderIndex = 0;
+                
+                const order = fakeOrders[orderIndex];
+                notificationContent.innerHTML = `
+                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <div style="width: 30px; height: 30px; border-radius: 50%; background: var(--accent-red); 
+                            display: flex; align-items: center; justify-content: center; margin-right: 10px;">
+                            👤
+                        </div>
+                        <strong>${order.name}</strong>
+                    </div>
+                    <div style="color: var(--text-gray); margin-bottom: 5px;">
+                        Baru saja membeli <strong style="color: var(--accent-red);">${order.amount}</strong> di ${order.game}
+                    </div>
+                    <div style="font-size: 0.8rem; color: var(--text-gray);">
+                        ${order.time}
+                    </div>
+                `;
+                
+                notificationContainer.style.display = 'block';
+                
+                setTimeout(() => {
+                    notificationContainer.style.display = 'none';
+                    orderIndex++;
+                    setTimeout(showNextOrder, 5000);
+                }, 5000);
+            }
+            
+            setTimeout(showNextOrder, 3000);
+        }
+        
+        // 4. FITUR BONUS KEKEPATUHAN (Loyalty Bonus)
+        function createLoyaltyBonus() {
+            const loyaltyBonus = document.createElement('div');
+            loyaltyBonus.id = 'loyalty-bonus';
+            loyaltyBonus.style.cssText = `
+                background: linear-gradient(135deg, #2a9d8f, #2a9d8f);
+                color: white;
+                padding: 15px;
+                border-radius: 10px;
+                margin: 20px 0;
+                text-align: center;
+                display: none;
+            `;
+            
+            loyaltyBonus.innerHTML = `
+                <div style="font-size: 1.2rem; margin-bottom: 10px;">
+                    🎁 <strong>BONUS KEKEPATUHAN!</strong> 🎁
+                </div>
+                <div style="margin-bottom: 10px;">
+                    Top up <strong>10 kali</strong> dalam seminggu dan dapatkan 
+                    <strong style="color: #ffd700;">DISKON 15%</strong> untuk top up ke-4!
+                </div>
+                <div style="font-size: 0.9rem; opacity: 0.9;">
+                    Progress: <span id="loyalty-progress">0/3</span>
+                    <div style="background: #1e1e1e; height: 8px; border-radius: 4px; margin-top: 5px;">
+                        <div id="loyalty-progress-bar" style="width: 0%; height: 100%; background: #ffd700; border-radius: 4px;"></div>
+                    </div>
+                </div>
+            `;
+            
+            const firstTopupForm = document.querySelector('.topup-form');
+            if (firstTopupForm) {
+                firstTopupForm.parentNode.insertBefore(loyaltyBonus, firstTopupForm);
+                
+                const progress = localStorage.getItem('loyalty-progress') || 0;
+                const progressBar = document.getElementById('loyalty-progress-bar');
+                const progressText = document.getElementById('loyalty-progress');
+                
+                if (progress < 3) {
+                    loyaltyBonus.style.display = 'block';
+                    progressBar.style.width = `${(progress / 3) * 100}%`;
+                    progressText.textContent = `${progress}/3`;
+                    
+                    document.querySelectorAll('.select-package').forEach(button => {
+                        button.addEventListener('click', function() {
+                            let currentProgress = parseInt(localStorage.getItem('loyalty-progress') || 0);
+                            currentProgress++;
+                            localStorage.setItem('loyalty-progress', currentProgress);
+                            
+                            if (currentProgress >= 3) {
+                                loyaltyBonus.innerHTML = `
+                                    <div style="font-size: 1.2rem; margin-bottom: 10px;">
+                                        🎉 <strong>SELAMAT!</strong> 🎉
+                                    </div>
+                                    <div style="margin-bottom: 10px;">
+                                        Anda berhak mendapatkan <strong style="color: #ffd700;">DISKON 15%</strong> 
+                                        untuk top up berikutnya!
+                                    </div>
+                                    <div style="font-size: 0.9rem; opacity: 0.9;">
+                                        Kode: <strong style="background: #1e1e1e; padding: 3px 10px; border-radius: 5px;">LOYAL15</strong>
+                                    </div>
+                                `;
+                            } else {
+                                progressBar.style.width = `${(currentProgress / 3) * 100}%`;
+                                progressText.textContent = `${currentProgress}/3`;
+                            }
+                        });
+                    });
+                }
+            }
+        }
+        
+        // 5. FITUR COMPARISON SAVINGS
+        function createComparisonSavings() {
+            document.querySelectorAll('.package-card').forEach(card => {
+                const priceElement = card.querySelector('.discounted-price');
+                if (priceElement) {
+                    const priceText = priceElement.textContent.replace('Rp ', '').replace(/\./g, '');
+                    const originalPriceElement = card.querySelector('.original-price');
+                    
+                    if (originalPriceElement) {
+                        const originalPriceText = originalPriceElement.textContent.replace('Rp ', '').replace(/\./g, '');
+                        const price = parseInt(priceText);
+                        const originalPrice = parseInt(originalPriceText);
+                        
+                        if (!isNaN(price) && !isNaN(originalPrice) && originalPrice > price) {
+                            const savings = originalPrice - price;
+                            const savingsPercent = Math.round((savings / originalPrice) * 100);
+                            
+                            const savingsBadge = document.createElement('div');
+                            savingsBadge.style.cssText = `
+                                position: absolute;
+                                top: 10px;
+                                left: 10px;
+                                background: #2a9d8f;
+                                color: white;
+                                padding: 3px 8px;
+                                border-radius: 12px;
+                                font-size: 0.7rem;
+                                font-weight: bold;
+                                z-index: 1;
+                            `;
+                            savingsBadge.textContent = `Hemat ${savingsPercent}%`;
+                            
+                            card.style.position = 'relative';
+                            if (!card.querySelector('.savings-badge')) {
+                                savingsBadge.className = 'savings-badge';
+                                card.appendChild(savingsBadge);
+                            }
+                        }
+                    }
+                }
+            });
+        }
+        
+        // 6. FITUR AUTO-SCROLL TO PACKAGE
+        function createAutoScrollFeature() {
+            document.querySelectorAll('.select-package').forEach(button => {
+                button.addEventListener('click', function() {
+                    const form = this.closest('form');
+                    if (form) {
+                        form.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        
+                        form.style.boxShadow = '0 0 0 3px var(--accent-red)';
+                        setTimeout(() => {
+                            form.style.boxShadow = '';
+                        }, 1000);
+                    }
+                });
+            });
+        }
+        
+        // 7. FITUR SHARING REWARD
+        function createSharingReward() {
+            const shareReward = document.createElement('div');
+            shareReward.id = 'share-reward';
+            shareReward.style.cssText = `
+                position: fixed;
+                bottom: 80px;
+                left: 20px;
+                background: var(--card-bg);
+                border: 1px solid var(--accent-purple);
+                border-radius: 10px;
+                padding: 15px;
+                z-index: 999;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+                width: 250px;
+                display: none;
+            `;
+            
+            shareReward.innerHTML = `
+                <div style="color: var(--accent-purple); font-weight: bold; margin-bottom: 10px;">
+                    💎 DAPATKAN 5% DISKON!
+                </div>
+                <div style="color: var(--text-gray); font-size: 0.9rem; margin-bottom: 15px;">
+                    Bagikan Dhil Store ke 3 teman dan dapatkan diskon 5% untuk pembelian berikutnya!
+                </div>
+                <button id="share-btn" style="
+                    background: var(--accent-purple);
+                    color: white;
+                    border: none;
+                    padding: 8px 15px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    width: 100%;
+                    font-weight: bold;
+                ">
+                    🔗 Bagikan Sekarang
+                </button>
+            `;
+            
+            document.body.appendChild(shareReward);
+            
+            setTimeout(() => {
+                shareReward.style.display = 'block';
+            }, 30000);
+            
+            document.getElementById('share-btn').addEventListener('click', function() {
+                const shareText = 'Cek Dhil Store untuk top up game termurah! Mobile Legends, Free Fire, PUBG, dan banyak lagi. Joki MLBB juga tersedia!';
+                const shareUrl = window.location.href;
+                
+                if (navigator.share) {
+                    navigator.share({
+                        title: 'Dhil Store - Top Up Game Termurah',
+                        text: shareText,
+                        url: shareUrl
+                    });
+                } else {
+                    navigator.clipboard.writeText(`${shareText} ${shareUrl}`).then(() => {
+                        alert('Link berhasil disalin! Kirim ke 3 teman untuk mendapatkan diskon.');
+                    });
+                }
+                
+                shareReward.style.display = 'none';
+                localStorage.setItem('shared-store', 'true');
+            });
+        }
+        
+        // 8. FITUR RANDOM DISCOUNT POPUP
+        function createRandomDiscountPopup() {
+            const today = new Date().toDateString();
+            const lastPopup = localStorage.getItem('last-discount-popup');
+            
+            if (lastPopup !== today) {
+                setTimeout(() => {
+                    const discount = Math.floor(Math.random() * 20) + 5;
+                    const popup = document.createElement('div');
+                    popup.id = 'discount-popup';
+                    popup.style.cssText = `
+                        position: fixed;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        background: linear-gradient(135deg, var(--accent-red), var(--accent-purple));
+                        color: white;
+                        padding: 30px;
+                        border-radius: 15px;
+                        z-index: 10000;
+                        text-align: center;
+                        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                        max-width: 400px;
+                        width: 90%;
+                    `;
+                    
+                    popup.innerHTML = `
+                        <div style="font-size: 2rem; margin-bottom: 15px;">🎉</div>
+                        <div style="font-size: 1.5rem; font-weight: bold; margin-bottom: 10px;">
+                            SELAMAT!
+                        </div>
+                        <div style="margin-bottom: 15px;">
+                            Anda mendapatkan <strong style="font-size: 2rem;">${discount}%</strong> DISKON
+                        </div>
+                        <div style="font-size: 0.9rem; margin-bottom: 20px; opacity: 0.9;">
+                            Berlaku untuk 1 jam ke depan
+                        </div>
+                        <div style="display: flex; gap: 10px;">
+                            <button id="use-discount" style="
+                                flex: 1;
+                                background: white;
+                                color: var(--accent-red);
+                                border: none;
+                                padding: 10px;
+                                border-radius: 5px;
+                                font-weight: bold;
+                                cursor: pointer;
+                            ">
+                                Gunakan Diskont
+                            </button>
+                            <button id="close-popup" style="
+                                flex: 1;
+                                background: transparent;
+                                color: white;
+                                border: 2px solid white;
+                                padding: 10px;
+                                border-radius: 5px;
+                                font-weight: bold;
+                                cursor: pointer;
+                            ">
+                                Nanti Saja
+                            </button>
+                        </div>
+                    `;
+                    
+                    document.body.appendChild(popup);
+                    
+                    const overlay = document.createElement('div');
+                    overlay.style.cssText = `
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background: rgba(0,0,0,0.7);
+                        z-index: 9999;
+                    `;
+                    document.body.appendChild(overlay);
+                    
+                    document.getElementById('close-popup').addEventListener('click', () => {
+                        document.body.removeChild(popup);
+                        document.body.removeChild(overlay);
+                        localStorage.setItem('last-discount-popup', today);
+                    });
+                    
+                    document.getElementById('use-discount').addEventListener('click', () => {
+                        alert(`Kode diskon ${discount}%: DISCOUNT${discount}\nSalin kode ini saat checkout!`);
+                        document.body.removeChild(popup);
+                        document.body.removeChild(overlay);
+                        localStorage.setItem('last-discount-popup', today);
+                    });
+                }, 10000);
+            }
+        }
+        
+        // 9. FITUR BUNDLE RECOMMENDATION
+        function createBundleRecommendation() {
+            const packages = Array.from(document.querySelectorAll('.package-card'));
+            
+            let bestValuePackage = null;
+            let bestValue = Infinity;
+            
+            packages.forEach(package => {
+                const diamondText = package.querySelector('.diamond-amount')?.textContent;
+                const priceText = package.querySelector('.discounted-price')?.textContent;
+                
+                if (diamondText && priceText) {
+                    const diamonds = parseInt(diamondText.match(/\d+/)?.[0] || '0');
+                    const price = parseInt(priceText.replace(/[^\d]/g, ''));
+                    
+                    if (diamonds > 0 && price > 0) {
+                        const value = price / diamonds;
+                        if (value < bestValue) {
+                            bestValue = value;
+                            bestValuePackage = package;
+                        }
+                    }
+                }
+            });
+            
+            if (bestValuePackage) {
+                const badge = document.createElement('div');
+                badge.style.cssText = `
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    background: linear-gradient(45deg, #ff9900, #ffcc00);
+                    color: #121212;
+                    padding: 5px 10px;
+                    border-radius: 20px;
+                    font-size: 0.8rem;
+                    font-weight: bold;
+                    z-index: 2;
+                    animation: bounce 2s infinite;
+                `;
+                badge.textContent = '⭐ BEST VALUE';
+                
+                bestValuePackage.style.position = 'relative';
+                bestValuePackage.appendChild(badge);
+            }
+        }
+        
+        // 10. FITUR QUICK ORDER SHORTCUT
+        function createQuickOrderShortcut() {
+            const shortcut = document.createElement('div');
+            shortcut.id = 'quick-order-shortcut';
+            shortcut.style.cssText = `
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                width: 60px;
+                height: 60px;
+                background: var(--accent-red);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 1.5rem;
+                cursor: pointer;
+                z-index: 1000;
+                box-shadow: 0 5px 15px rgba(230, 57, 70, 0.5);
+                transition: transform 0.3s;
+            `;
+            shortcut.innerHTML = '⚡';
+            shortcut.title = 'Pesan Cepat (Terakhir dibeli)';
+            
+            document.body.appendChild(shortcut);
+            
+            shortcut.addEventListener('click', () => {
+                const lastOrder = localStorage.getItem('last-order');
+                if (lastOrder) {
+                    const order = JSON.parse(lastOrder);
+                    window.open(`https://wa.me/6281265537794?text=Saya%20ingin%20membeli%20lagi:%20${encodeURIComponent(order.package)}%20untuk%20${order.game}`, '_blank');
+                } else {
+                    document.getElementById('ml-topup').scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+            
+            document.querySelectorAll('form').forEach(form => {
+                form.addEventListener('submit', function(e) {
+                    const game = this.closest('.game-section')?.id?.replace('-topup', '') || 'Mobile Legends';
+                    const package = this.querySelector('.package-card.selected')?.querySelector('.diamond-amount')?.textContent || 'Paket Diamond';
+                    
+                    localStorage.setItem('last-order', JSON.stringify({
+                        game: game,
+                        package: package,
+                        timestamp: new Date().toISOString()
+                    }));
+                });
+            });
+        }
+        
+        // INISIALISASI SEMUA FITUR
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(() => {
+                createFlashSaleCountdown();
+                createLimitedStockNotification();
+                createLiveOrderNotification();
+                createLoyaltyBonus();
+                createComparisonSavings();
+                createAutoScrollFeature();
+                createSharingReward();
+                createRandomDiscountPopup();
+                createBundleRecommendation();
+                createQuickOrderShortcut();
+            }, 1000);
         });
     </script>
 </body>
